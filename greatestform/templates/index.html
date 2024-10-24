@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <b> <h1>To Find The Greatest of Two Numbers</h1></b>
+    </head>
+    <hr>
+    <bod>
+        <form method="POST">{% csrf_token %}
+            <label for="n1"> Number1:</label>
+            <input name="snum1" id="n1" type="number" placeholder="Enter First Number" required><br>
+            <label for="n2">Number2:</label>
+            <input name="snum2" id="n2" type="number" placeholder="Enter Second Number" required>
+            <br><br> <button> Submit</button>
+        </form>
+        <p> Hello Friends</p>
+        {% if res %}
+            <p> Number 1 is greater</p>
+        {% else %}
+            <p> Number 2 is greater</p>
+        {% endif %}
+    </bod>
+
+</html>
